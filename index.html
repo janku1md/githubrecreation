@@ -41,10 +41,12 @@
   <script type="text/template" data-template-name="repo">
     <li>
       <div class=repotextboxes>
-      <a href="<%= html_url %>"><%= name %></a>
-      <%= language %><br />
+      <a href="<%= html_url %>"><%= name %></a><br />
       <%= pushed_at %>
-      <div class=righttext><span class="octicon octicon-star"></span><%= stargazers_count %>
+
+      <div class=righttext>
+      <%= language %>  
+      <span class="octicon octicon-star"></span><%= stargazers_count %>
       <span class="octicon octicon-git-branch"></span><%= forks_count %></div>
       <!-- <%= stargazers_url %>
       <%= forks_url %> -->
