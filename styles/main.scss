@@ -1,0 +1,64 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+body {
+/*   background-color: purple; */
+  font-family: "helvetica", sans-serif;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+  border: solid black bottom 1px;
+  background-color: #f5f5f5;
+  padding: 10px 135px 0 135px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.container {
+  background-color: white;
+  width:960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sidebar {
+  position: relative;
+  width: 230px;
+  float: left;
+  text-align: left;
+}
+
+.repo_listing {
+  position: relative;
+/*   background-color: red; */
+  margin-left: 250px;
+  width: 734px;
+  text-align: left;
+  /* clear: both; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.righttext {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.repotextboxes {
+  vertical-align: middle;
+  border-bottom: 10px;
+  width: 100%;
+}

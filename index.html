@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Github Recreation</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles///octicons/octicons.css">
+
+</head>
+<body>
+<header>
+  <img src="images/header.png">
+</header>
+<div class="container">
+  <div class="sidebar">
+  <ul class="sides">
+
+    <script type="text/javascript" src="token.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="bower_components/moment/moment.js"></script>
+
+    <script type="text/template" data-template-name="side">
+      <li>
+        <a><img src="<%= avatar_url %>"></a>
+        <%= name %>
+        <%= email %><br />
+        <%= created_at %>
+      </li>
+    </script>
+  </ul>
+  <img src="images/sidebar.png">
+  </div>
+  <div class="repo_listing">
+    <img src="images/righttop.png">
+    <ul class="repositories">
+
+  <script type="text/javascript" src="token.js"></script>
+  <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+  <script type="text/javascript" src="bower_components/moment/moment.js"></script>
+
+  <script type="text/template" data-template-name="repo">
+    <li>
+      <div class=repotextboxes>
+      <a href="<%= html_url %>"><%= name %></a>
+      <%= language %><br />
+      <%= pushed_at %>
+      <div class=righttext><span class="octicon octicon-star"></span><%= stargazers_count %>
+      <span class="octicon octicon-git-branch"></span><%= forks_count %></div>
+      <!-- <%= stargazers_url %>
+      <%= forks_url %> -->
+    </div>
+    </li>
+  </script>
+</ul>
+    </div>
+
+
+</div>
+
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
